@@ -24,3 +24,4 @@ colnames(plot_gdp)[colnames(plot_gdp)=="variable"] <-"Department"
 plot_gdp$value <- plot_gdp$value * 100
 colnames(plot_gdp)[colnames(plot_gdp)=="value"] <- "Percentage_share"
 ggplot(plot_gdp, aes(x = Financial_year, y = Percentage_share)) + geom_line(aes(color = Department,group = Department))  # To plot Financial year vs value
+print("blah blah blah")
